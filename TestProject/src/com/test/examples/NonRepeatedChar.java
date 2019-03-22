@@ -33,7 +33,9 @@ public class NonRepeatedChar {
 		}
 		else {
 			System.out.println("No non repeating character");
+			
 		}
+		System.out.println(repeating);
 		return firstNonRepeating;
 	}
 
