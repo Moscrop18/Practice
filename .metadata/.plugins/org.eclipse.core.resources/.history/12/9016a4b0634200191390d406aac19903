@@ -1,0 +1,22 @@
+package com.test.examples;
+
+import java.util.*;
+
+public class StringFrequency {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public String getFrequency(String s) {
+		char[] strArr = s.toCharArray();
+		Map<Character>
+		for(int i=0; i<strArr.length; i++) {
+			
+		}
+		return s;
+		
+	}
+
+}

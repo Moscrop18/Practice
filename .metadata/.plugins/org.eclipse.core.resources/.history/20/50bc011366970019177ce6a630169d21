@@ -1,0 +1,24 @@
+package com.test.examples;
+
+public abstract class Geek {
+
+	public static void main(String[] args) {
+		
+		try {
+			getName();
+		}catch(Exception) {
+			System.out.println("caught");
+		}
+
+	}
+	
+	       
+	   public static void getName() {
+		   try {
+			   throw new RuntimeException();
+		   }finally {
+			   System.out.println("In finally");
+		   }
+	   }
+
+}

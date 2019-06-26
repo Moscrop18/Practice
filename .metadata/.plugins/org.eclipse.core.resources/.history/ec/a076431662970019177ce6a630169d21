@@ -1,0 +1,25 @@
+package com.test.examples;
+
+public class Geek {
+
+	public static void main(String[] args) {
+		
+		Geek geek = new Geek(); 
+        
+        geek.geekIdentity("Mohit", 1); 
+        geek.geekIdentity("shubham", 2); 
+
+	}
+	
+	       
+	    public void geekIdentity(String name,  int id){ 
+	           System.out.println("First");
+	        System.out.println("geekName :"+ name +" "+"Id :"+ id); 
+	    } 
+	       
+	    public void geekIdentity(int id, String name){ 
+	          System.out.println("2nd"); 
+	        System.out.println("Id :"+ id +" "+"geekName :"+ name); 
+	    } 
+
+}

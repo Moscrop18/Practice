@@ -1,0 +1,15 @@
+package com.test.main;
+
+import com.test.pojo.Employee;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.setId("1");
+		emp.setName("kamal");
+		emp.setSalary("200");
+
+	}
+
+}

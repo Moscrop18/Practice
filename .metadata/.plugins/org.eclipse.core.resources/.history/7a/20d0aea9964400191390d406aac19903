@@ -1,0 +1,58 @@
+package com.test.examples;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+public class StringCount {
+
+	public static void main(String[] args) {
+		String s="ab ab bc bc ca";
+		getCountOfString(s);
+		System.out.println(getCountOfStringByMap(s));
+	}
+
+	public static void getCountOfString(String s) {
+		String lastString ="";
+		int count=0;
+		StringTokenizer token = new StringTokenizer(s, " ");
+		while(token.hasMoreTokens()) {
+			String curr =token.nextToken();
+			if(count==0) {
+				lastString=curr;
+				count++;
+				continue;
+			}
+			if(!lastString.equals(curr)) {
+				System.out.print(count+" "+lastString+" ");
+				count =1;
+				lastString=curr;
+				continue;
+			}
+			count++;
+		}
+		if(count>0) {
+			System.out.println(count+" "+lastString+" ");
+		}
+	}
+	
+	public static String getCountOfStringByMap(String s) {
+		String[] strArr = s.split(" ");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(String str:strArr) {
+			if(map.containsKey(str)) {
+				map.put(str, map.get(str)+1);
+			}else {
+				map.put(str,1);
+			}
+		}
+		StringBuilder sb = new StringBuilder();
+		for(Map.Entry<String, Integer> entrySet:map.entrySet()) {
+			sb.append(entrySet.getValue());
+			sb.append(" ");
+			sb.append(entrySet.getKey());
+			sb.append(" ");
+		}
+		return sb.toString().trim();
+	}
+}

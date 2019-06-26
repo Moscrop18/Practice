@@ -1,0 +1,19 @@
+package com.test.examples;
+
+public class VariableConversion {
+
+	public static void main(String[] args) {
+		String s = "this_is_me";
+		
+	}
+	
+	public static String convertVariable(String s) {
+		char[] strArr = s.toCharArray();
+		for(int i=0; i<strArr.length; i++) {
+			
+		}
+		return s;
+		
+	}
+
+}

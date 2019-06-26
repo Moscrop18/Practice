@@ -1,0 +1,15 @@
+package com.test.examples;
+
+public class VariableConversion {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static String convertVariable(String s) {
+		
+		return s;
+		
+	}
+
+}

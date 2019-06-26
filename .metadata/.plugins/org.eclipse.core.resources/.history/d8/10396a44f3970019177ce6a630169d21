@@ -1,0 +1,23 @@
+package com.test.examples;
+
+public class ArrayMerge {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void mergeArray(int[]arr1, int[]arr2) {
+		int arr1Length = arr1.length;
+		int arr2Length = arr2.length;
+		
+		int i=0, j=0 , k=0;
+		int arr3[] = new int[arr1Length+arr2Length];
+		
+		while(arr1Length<arr2Length) {
+			
+		}
+		
+		
+	}
+}

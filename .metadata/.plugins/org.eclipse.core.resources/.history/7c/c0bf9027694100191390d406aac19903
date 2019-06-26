@@ -1,0 +1,15 @@
+package com.test.main;
+
+import com.test.pojo.Employee;
+
+public class Test {
+
+	public static void main(String[] args) {
+		long [] id = {1,2,3};
+		String[] name = {"A", "K", "H"};
+		long[] salary = {100, 200, 300};
+		
+
+	}
+
+}

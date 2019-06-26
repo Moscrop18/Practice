@@ -1,0 +1,34 @@
+package com.test.examples;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class NonRepeatedChar {
+
+	public static void main(String[] args) {
+		String s="kamal";
+		System.out.println(getNonRepeatedChar(s));
+
+	}
+	
+	public static char getNonRepeatedChar(String s) {
+		Set<Character> repeating = new HashSet<Character>();
+		List<Character> nonRepeating = new ArrayList<Character>();
+		char[] strArr = s.toCharArray();
+		for(char c:strArr) {
+			if(repeating.contains(c)) {	
+				continue;
+			}
+			if(nonRepeating.contains(c)) {
+				nonRepeating.remove(c);
+				repeating.add(c);
+			}else {
+				nonRepeating.add(c);
+			}
+		}
+		return nonRepeating.get(0);
+	}
+
+}

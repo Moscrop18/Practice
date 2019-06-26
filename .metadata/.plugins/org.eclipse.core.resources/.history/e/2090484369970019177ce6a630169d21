@@ -1,0 +1,23 @@
+package com.test.examples;
+
+public abstract class Geek {
+
+	public static void main(String[] args) {
+		
+		Geek g =  new Child();
+		g.getName();
+	}
+	
+	       
+	   public void getName() {
+		  System.out.println("inBase");
+	   }
+
+}
+
+class Child extends Geek{
+	public void getName() {
+		super.getName();
+		System.out.println("inChild");
+	}
+}

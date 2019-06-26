@@ -1,0 +1,26 @@
+package com.test.main;
+
+public class ThreadTest {
+
+	public static boolean stateChanged = false;
+	
+	public static void main(String[] args) {
+		
+		Thread backGroundThread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				int i=0;
+				while(!stateChanged) {
+					i++;
+				}
+				
+			}
+		});
+		backGroundThread.start();
+		stateChanged = true;
+		System.out.println("Finished");
+
+	}
+
+}

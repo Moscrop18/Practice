@@ -1,0 +1,25 @@
+package com.test.examples;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class StringCountMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void getCount(String s) {
+		String[] strArr = s.split(" ");
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(String str:strArr) {
+			if(map.containsKey(str)) {
+				map.put(str, map.get(str)+1);
+			}else {
+				map.put(str,1);
+			}
+		}
+	}
+}
+

@@ -1,0 +1,15 @@
+package com.test.examples;
+
+public abstract class Geek {
+
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	       
+	   public void getName() {
+		  System.out.println("inBase");
+	   }
+
+}

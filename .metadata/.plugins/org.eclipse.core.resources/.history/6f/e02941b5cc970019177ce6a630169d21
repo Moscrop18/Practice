@@ -1,0 +1,21 @@
+package com.test.examples;
+
+public  class Geek {
+
+	public static void main(String[] args) {
+		new Geek().foo(null);
+		
+	}
+	
+	       
+	public void foo(String s) {
+		 System.out.println("String");
+		 }
+
+		 public void foo(StringBuffer sb){
+		 System.out.println("StringBuffer");
+		 }
+
+
+}
+

@@ -1,0 +1,27 @@
+package com.test.main;
+
+public class ThreadTest {
+
+	public static boolean stateChanged = false;
+	
+	public static void main(String[] args) throws InterruptedException {
+		int i=0;
+		Thread backGroundThread = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+				while(!stateChanged) {
+					i++;
+				}
+				
+			}
+		});
+		backGroundThread.start();
+		Thread.sleep(2000);
+		stateChanged = true;
+		System.out.println("Finished");
+
+	}
+
+}

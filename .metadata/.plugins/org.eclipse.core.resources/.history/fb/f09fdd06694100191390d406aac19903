@@ -1,0 +1,12 @@
+package com.test.main;
+
+import com.test.pojo.Employee;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int [] id = {1,2,3};
+
+	}
+
+}

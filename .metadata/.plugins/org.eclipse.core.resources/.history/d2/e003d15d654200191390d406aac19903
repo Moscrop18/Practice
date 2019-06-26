@@ -1,0 +1,38 @@
+package com.test.examples;
+
+import java.util.*;
+
+public class StringFrequency {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s= "abbca";
+		getFrequency(s);
+
+	}
+	
+	public static String getFrequency(String s) {
+		String s1=null;
+		char[] strArr = s.toCharArray();
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		for(int i=0; i<strArr.length; i++) {
+			if(map.containsKey(strArr[i])) {				
+				map.put(Character.toString(strArr[i]), map.get(strArr[i])+1);
+			}
+			else {
+				map.put(Character.toString(strArr[i]), 1);
+			}
+		}
+		
+		Set<String> keys = map.keySet();
+		Iterator<String> it = keys.iterator();
+		while(it.hasNext()) {
+			String key = it.next();
+			System.out.println(key+" "+map.get(key));
+			 s1=key+map.get(key);
+		}
+		return s1;
+		
+	}
+
+}

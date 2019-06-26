@@ -1,0 +1,26 @@
+package com.test.junit;
+
+import com.test.examples.NonRepeatedChar;
+
+public class TestNonRepeatedChar {
+	
+	 @Test
+	    public void testGetFirstNonRepeatedChar() {
+	        assertEquals('b', NonRepeatedChar.getNonRepeatedChar("abcdefghija"));
+	        assertEquals('h', NonRepeatedChar.getNonRepeatedChar("hello"));
+	        assertEquals('J', NonRepeatedChar.getNonRepeatedChar("Java"));
+	        assertEquals('i', NonRepeatedChar.getNonRepeatedChar("simplest"));
+	    }
+
+
+	private void assertEquals(char c, char nonRepeatedChar) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	Read more: https://javarevisited.blogspot.com/2014/03/3-ways-to-find-first-non-repeated-character-String-programming-problem.html#ixzz5hwMRf4hp
+
+	Read more: https://javarevisited.blogspot.com/2014/03/3-ways-to-find-first-non-repeated-character-String-programming-problem.html#ixzz5hwMRfM8p
+
+}

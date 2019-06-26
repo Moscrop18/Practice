@@ -1,0 +1,14 @@
+package com.test.examples;
+
+public class NonRepeatedChar {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public static void getNonRepeatedChar() {
+		
+	}
+
+}

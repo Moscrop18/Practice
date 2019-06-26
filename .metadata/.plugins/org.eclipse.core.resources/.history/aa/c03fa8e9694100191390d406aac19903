@@ -1,0 +1,25 @@
+package com.test.main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.test.pojo.Employee;
+
+public class Test {
+	
+	int n=3;
+	long [] id = {1,2,3};
+	String[] name = {"A", "K", "H"};
+	long[] salary = {100, 200, 300};
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+	}
+	
+	public void addValues(long[] id, String[] name, long[] salary) {
+		List<Employee> empList = new ArrayList<Employee>();
+		for (int i=0; i<n; i++) {
+			empList.add()
+		}
+	}
+
+}

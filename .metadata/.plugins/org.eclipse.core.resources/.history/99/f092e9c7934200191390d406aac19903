@@ -1,0 +1,33 @@
+package com.test.examples;
+
+import java.util.*;
+
+public class StringFrequency {
+
+	public static void main(String[] args) {
+		
+		String s= "bccaba";
+		System.out.println(getFrequency(s));
+
+	}	
+	public static String getFrequency(String s) {
+		char[] strArr = s.toCharArray();
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		for(char c:strArr) {
+			if(map.containsKey(c)) {				
+				map.put(c, map.get(c)+1);
+			}
+			else {
+				map.put(c, 1);
+			}
+		}	
+		StringBuilder sb = new StringBuilder();
+		for(Map.Entry<Character, Integer> entrySet:map.entrySet()) {
+			sb.append(entrySet.getKey());
+			sb.append(entrySet.getValue());
+		}
+		return sb.toString();
+		
+	}
+
+}
