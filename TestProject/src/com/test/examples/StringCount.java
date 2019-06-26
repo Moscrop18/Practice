@@ -18,6 +18,10 @@ public class StringCount {
 		long endTime2  = System.nanoTime();
 		long totalTime2 = endTime2 - startTime2;
 		System.out.println("Running time of getCountOfStringByMap "+totalTime2);
+		String s1 = "abc";
+		s1=s1.replaceAll(s1, "def");
+		System.out.println(s1 );
+		
 		
 	}
 
