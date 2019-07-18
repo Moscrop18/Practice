@@ -3,10 +3,31 @@ package com.test.examples;
 public class VariableConversion {
 
 	public static void main(String[] args) {
-		String s = "thisIsMe";
-		System.out.println(convertVariable(s));
+		
+		for(int i=0; i<args.length; i++) {
+			System.out.println(args[i]);
+		}
+		
+		System.out.println(getResult(10, 2));
+		/*
+		 * String s = "thisIsMe"; System.out.println(convertVariable(s));
+		 */
+	}
+	
+	public static int getResult(int a , int b) {
+		int x = 0;
+		try {
+		x=a/b;
+		
+		System.out.println(x);
+		return x;
+		}catch(Exception e) {
+			
+		}
+		return x;
 		
 	}
+	
 	
 	public static String convertVariable(String s) {
 		char[] strArr = s.toCharArray();
