@@ -1,6 +1,7 @@
 package com.test.examples;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -9,6 +10,11 @@ public class NonRepeatedChar {
 	public static void main(String[] args) {
 		String s="jjavavba";
 		System.out.println(getNonRepeatedChar(s));
+		
+		List<String> list = new ArrayList<>(Arrays.asList("1", "2","3" ));
+		String s1 = s.join(",", list);
+		System.out.println(s1);
+                       
 
 	}
 	

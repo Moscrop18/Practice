@@ -5,11 +5,11 @@ import java.util.Optional;
 public class OptionalExample {
 
 	public static void main(String[] args) {
-		String[] str = new String[10]; 
-		str[9] = "AgraIsCool"; 
-	      Optional<String> isNull = Optional.ofNullable(str[9]);        
+		//String[] str = new String[10]; 
+		String str = null; 
+	      Optional<String> isNull = Optional.ofNullable(str);        
 	      if(isNull.isPresent()){              
-	         String str2 = str[9].substring(2, 5);                
+	         String str2 = str.substring(2, 5);                
 	         System.out.print("Substring is: "+ str2);       
 	      }     
 	      else{      

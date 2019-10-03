@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+       	<property name="hibernate.dialect">org.hibernate.dialect.DB2Dialect</property>
+		<property name="hibernate.connection.driver_class">com.ibm.db2.jcc.DB2Driver</property>
+		<property name="hibernate.connection.url">jdbc:db2://9.182.233.111:50000/PLDA_EXP</property>
+		<property name="hibernate.connection.username">db2user</property>
+		<property name="hibernate.connection.password">welcome@localdb</property>
+		<property name="hibernate.default_schema">PLDA_TEST_GF</property>
+        
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        
+        <mapping class="com.hibernate.model.ExportManifest"/>
+    </session-factory>
+</hibernate-configuration>

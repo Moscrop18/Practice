@@ -8,10 +8,11 @@ public class VariableConversion {
 			System.out.println(args[i]);
 		}
 		
-		System.out.println(getResult(10, 2));
-		/*
-		 * String s = "thisIsMe"; System.out.println(convertVariable(s));
-		 */
+		//System.out.println(getResult(10, 2));
+		
+		  String s = "thisIsMe"; 
+		  System.out.println(convertVariable(s));
+		 
 	}
 	
 	public static int getResult(int a , int b) {
@@ -34,13 +35,14 @@ public class VariableConversion {
 		StringBuilder sb = new StringBuilder();
 		boolean flag = false;
 		for(int i=0; i<strArr.length; i++) {
+			
 		if(s.indexOf('_')==-1){
 			if(strArr[i]==Character.toUpperCase(strArr[i])) {
 			strArr[i]=Character.toLowerCase(strArr[i]);
 			flag=true;
-			}else if(flag) {
+			}
+			if(flag) {
 			sb.append("_");
-			sb.append(strArr[i-1]);
 			sb.append(strArr[i]);
 			flag=false;
 			}		
@@ -48,18 +50,21 @@ public class VariableConversion {
 				sb.append(strArr[i]);
 				}
 		}
+		
 		else {
 			if(strArr[i]=='_') {
 				flag = true;
-		}else if(flag) {
+				continue;
+		}if(flag) {
 			sb.append(Character.toUpperCase(strArr[i]));
 			flag=false;
 		}
 		else { 
 			sb.append(strArr[i]);	
 		}
-	}		
-}		
+	}	
+		}
+	
 		return sb.toString();
 		
 	}

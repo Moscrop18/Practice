@@ -1,3 +1,15 @@
 INDEX VERSION 1.131
+C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1885128419.index
+\SpringExceptionHandling\src\main\java
+C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2230772302.index
+\SpringExceptionHandling\src\main\java
 C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3064795932.index
 \spring-mvc-example\src\main\java
+C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3925063125.index
+\SpringRestExample\src\main\java
+C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4057231830.index
+\SpringRestExample\src\main\java
+C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1344688558.index
+\SpringExceptionHandling\src\main\java
+C:\EclipseProjects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\839763400.index
+\SpringExceptionHandling\src\main\java

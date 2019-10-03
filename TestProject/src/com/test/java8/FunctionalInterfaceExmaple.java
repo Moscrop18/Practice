@@ -17,7 +17,7 @@ public class FunctionalInterfaceExmaple  implements TestFunctionalInterface1,Tes
 	}
 	@Override
 	public void test() {
-		// TODO Auto-generated method stub
+		System.out.println("child");
 		TestFunctionalInterface1.super.test();
 	}
 
@@ -30,7 +30,7 @@ interface TestFunctionalInterface1 {
 	
 	void go();
 	 default void test() {
-		
+		System.out.println("1");
 	}
 	
 	static void get() {

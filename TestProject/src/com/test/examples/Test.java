@@ -32,7 +32,11 @@ public class Test {
 
  
   public static void main(String[] args) throws InterruptedException {
-   System.out.println(nthPrime(2));
+	  
+	  A a = new B();
+	  a.test();
+	  
+	  System.out.println(nthPrime(2));
     ArrayList<String> list1= new ArrayList<String>();
     list1.add("a");
     list1.add("b");
@@ -40,6 +44,14 @@ public class Test {
     list1.add("c");
     System.out.println("List1 "+list1);
     System.out.println("List2 "+list2);
+    
+    int i=10;
+    if(i++==++i) {
+    	System.out.println("Inside if :"+i);
+    }
+    else {
+    	System.out.println("inside else :"+i);
+    }
    
   }
   public static int nthPrime(int n) {
@@ -72,4 +84,23 @@ public class Test {
     }
     return true;
 }
+}
+
+
+class A{
+	int a=10;
+	
+	public void test() {
+		System.out.println("A");
+	}
+}
+
+class B extends A{
+	int b=20;
+	
+	
+	public  void go() {
+		System.out.println("B");
+	}
+	
 }

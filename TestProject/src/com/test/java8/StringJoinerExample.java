@@ -15,6 +15,14 @@ public class StringJoinerExample {
         s.add("Daryl");  
                  
         System.out.println(s);  
+        testNull();
         
-    }  
+    } 
+    
+    public static void testNull() {
+    	String s = "";
+    	for(int i=0; i<s.length(); i++) {
+    		System.out.println(s);
+    	}
+    }
 }

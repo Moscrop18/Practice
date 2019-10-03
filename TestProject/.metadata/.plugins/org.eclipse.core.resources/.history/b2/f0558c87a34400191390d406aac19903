@@ -1,0 +1,20 @@
+package com.test.examples;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public static String getReverseString(String s) {
+		char[] sArr = s.toCharArray();
+		String reverse="";
+		for(int i=sArr.length; i>0; i--) {
+			reverse = reverse+sArr[i];
+		}
+		return reverse;
+		
+	}
+
+}

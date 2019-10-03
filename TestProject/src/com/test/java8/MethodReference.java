@@ -16,7 +16,7 @@ public class MethodReference {
 	MyInterface ref = obj::myMethod;  
 	// Calling the method of functional interface  
 	ref.display();  
-    }  
+    }
     
     public void test() {
     	BiFunction<Integer, Integer, Integer> product = Multiplication::multiply;  
