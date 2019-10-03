@@ -3961,3 +3961,4 @@ org.eclipse.jdt.core.JavaModelException: bin/com/test/java8 [in TestProject] is 
 2019-10-03 14:29:53,257 [Worker-1132: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2019-10-03 14:29:53,424 [Worker-1132: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-10-03 14:29:53,431 [Worker-1132: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-10-03 14:29:53,552 [Worker-1132: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
