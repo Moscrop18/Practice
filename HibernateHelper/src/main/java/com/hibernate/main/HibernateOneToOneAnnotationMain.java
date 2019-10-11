@@ -46,14 +46,17 @@ public class HibernateOneToOneAnnotationMain {
 			 
 			 
 
+			
+			
+			  Query query =session.
+			  createQuery("select em.id, em.manifestNumber, emi.id from ExportManifest em inner join em.manifestItems as emi"
+			  ); 
+			  List<Object[]> list = query.list();
+			 
 			/*
-			 * Query query =session.
-			 * createQuery("select em.id, em.manifestNumber, emi.id from ExportManifest em inner join em.manifestItems as emi"
-			 * ); List<Object[]> list = query.list();
-			 */
-			Query query = session.createQuery("from ExportManifest");
-
-			/*
+			 * Query query = session.createQuery("from ExportManifest");
+			 * 
+			 * 
 			 * Criteria criteria = session.createCriteria(ExportManifest.class);
 			 * //criteria.addOrder(Order.desc("id"));
 			 * //criteria.add(Restrictions.eq("manifestNumber", "160520GATEBS")); Criterion
@@ -66,24 +69,27 @@ public class HibernateOneToOneAnnotationMain {
 			 * "manifestNumber"))); //List disList = criteria.list();
 			 */
 
-			  List<ExportManifest> list = query.list();
+			  //List<ExportManifest> list = query.list();
 			
-			/*
-			 * for(Object[] o:list) { System.out.println("Id:"+o[0]);
-			 * System.out.println("Manifest Number:"+o[1]);
-			 * System.out.println("Items:"+o[2]); // System.out.println("ItemNumber:"+o[3]);
-			 * }
-			 */
+			
+			  for(Object[] o:list) { System.out.println("Id:"+o[0]);
+			  System.out.println("Manifest Number:"+o[1]);
+			  System.out.println("Items:"+o[2]); // System.out.println("ItemNumber:"+o[3]);
+			  }
+			 
 			 
 			  
 			
-			  for(ExportManifest o: list) {
-			  //System.out.println("Manifest:"+String.valueOf(o));
-			  System.out.println("Id:"+o.getId());
-			  System.out.println("Manifest Number:"+o.getManifestNumber());
-			  System.out.println("Item Id:"+ o.getManifestItems());
-			  
-			  }
+			/*
+			 * for(ExportManifest o: list) {
+			 * //System.out.println("Manifest:"+String.valueOf(o));
+			 * System.out.println("Id:"+o.getId());
+			 * System.out.println("Manifest Number:"+o.getManifestNumber());
+			 * System.out.println("Item Id:"+ o.getManifestItems());
+			 * 
+			 * }
+			 */
+			 
 			 
 			 
 
@@ -91,6 +97,7 @@ public class HibernateOneToOneAnnotationMain {
 
 			// System.out.println("Manifest Number:"+em.getManifestNumber());
 
+			
 			
 			
 			/*
@@ -106,8 +113,8 @@ public class HibernateOneToOneAnnotationMain {
 			 * System.out.println("Id:"+manifestItem.getId());
 			 * System.out.println("Manifest Items:"+manifestItem.getManifestId().getId()); }
 			 * } }
+			 * 
 			 */
-			 
 
 			/*
 			 * Iterator<Object> it = list.iterator(); while(it.hasNext()) { Object em =

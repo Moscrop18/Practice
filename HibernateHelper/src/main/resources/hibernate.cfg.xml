@@ -8,7 +8,7 @@
 		<property name="hibernate.connection.driver_class">com.ibm.db2.jcc.DB2Driver</property>
 		<property name="hibernate.connection.url">jdbc:db2://9.182.233.201:50000/PLDA_EXP</property>
 		<property name="hibernate.connection.username">db2user</property>
-		<property name="hibernate.connection.password">welcome@localdb</property>
+		<property name="hibernate.connection.password">welcometolocaldb</property>
 		<property name="hibernate.default_schema">PLDA_TEST_GF</property>
         
         <property name="hibernate.current_session_context_class">thread</property>
