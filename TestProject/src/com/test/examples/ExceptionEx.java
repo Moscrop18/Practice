@@ -19,10 +19,11 @@ public class ExceptionEx {
 			System.out.println(a);
 			throw new IOException();
 			
+			
 		}catch(Exception e) {
 			a=30;
 			System.out.println(a);
-		
+			
 		}
 		catch(Throwable t) {
 			a=35;

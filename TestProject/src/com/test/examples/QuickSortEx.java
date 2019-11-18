@@ -5,6 +5,9 @@ public class QuickSortEx {
 	public static void main(String[] args) {
 		int arr[] = {1, 5, 4, 7, 9, 6};
 		System.out.println(sort(arr));
+		solve(6, arr);
+		char[] c = {'o', 'm', 'a','r'};
+		con(c);
 
 	}
 	
@@ -32,6 +35,28 @@ public class QuickSortEx {
 		arr[i+1]= arr[high];
 		arr[high]= temp;
 		return i+1;
+	}
+	 
+	
+	public static  void solve(int n, int[]a) {
+		
+		int farthest = a[0];
+		for(int i=0; i<n ; i++) {
+			if(a[i]>farthest) {
+				farthest =  a[i];
+			}
+		}
+		System.out.println(farthest);
+	}
+	
+	public static String con(char[]a) {
+		String s="";
+		for(char a1:a) {
+			s+=String.valueOf(a1);
+		}
+		return s;
+		
+		
 	}
 
 }

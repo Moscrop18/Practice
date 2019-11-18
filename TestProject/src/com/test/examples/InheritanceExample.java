@@ -20,23 +20,36 @@ public class InheritanceExample {
 		list2.forEach(n->System.out.println(n));
 		
 		
+		test(null);
+		C c = new C();
+		c.test();
+		
+		
+		
 		
 
 	}
+	
+	public static void test(Object o) {
+		System.out.println("1");
+	}
 
+	public static void test(String s) {
+		System.out.println("2");
+	}
 }
 
 
 class B1{
 	
-	static int a;
+	int a=10;
 	
 	public void test() {
 		System.out.println("Base");
 	}
 	
-	public static void getA() {
-		a=15;
+	public  void getA() {
+		//a=15;
 		System.out.println(a);
 	}
 	
@@ -45,8 +58,14 @@ class B1{
 class C extends B1{
 	int b;
 	
-	public static void getA() {
+	public  void getA() {
 		a=20;
 		System.out.println(a);
 	}
+	
+	public void go() {
+		System.out.println("go");
+	}
 }
+
+

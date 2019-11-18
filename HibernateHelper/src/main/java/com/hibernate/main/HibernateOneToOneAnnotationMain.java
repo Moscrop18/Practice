@@ -48,11 +48,11 @@ public class HibernateOneToOneAnnotationMain {
 
 			
 			
-			  Query query =session.
-			  createQuery("select em.id, em.manifestNumber, emi.id from ExportManifest em inner join em.manifestItems as emi"
-			  ); 
-			  List<Object[]> list = query.list();
-			 
+			/*
+			 * Query query =session.
+			 * createQuery("select em.id, em.manifestNumber, emi.id from ExportManifest em inner join em.manifestItems as emi"
+			 * ); List<Object[]> list = query.list();
+			 */
 			/*
 			 * Query query = session.createQuery("from ExportManifest");
 			 * 
@@ -72,13 +72,13 @@ public class HibernateOneToOneAnnotationMain {
 			  //List<ExportManifest> list = query.list();
 			
 			
-			  for(Object[] o:list) { System.out.println("Id:"+o[0]);
-			  System.out.println("Manifest Number:"+o[1]);
-			  System.out.println("Items:"+o[2]); // System.out.println("ItemNumber:"+o[3]);
-			  }
+			/*
+			 * for(Object[] o:list) { System.out.println("Id:"+o[0]);
+			 * System.out.println("Manifest Number:"+o[1]);
+			 * System.out.println("Items:"+o[2]); // System.out.println("ItemNumber:"+o[3]);
+			 * }
+			 */
 			 
-			 
-			  
 			
 			/*
 			 * for(ExportManifest o: list) {
@@ -100,21 +100,41 @@ public class HibernateOneToOneAnnotationMain {
 			
 			
 			
-			/*
-			 * ExportManifest exportManifest
-			 * =(ExportManifest)session.get(ExportManifest.class, 10042);
-			 * if(exportManifest!=null) { List<ExportManifestItem> items
-			 * =exportManifest.getManifestItems();
-			 * 
-			 * if(items!=null) {
-			 * 
-			 * for ( Iterator<ExportManifestItem> iter = items.iterator();iter.hasNext(); )
-			 * { ExportManifestItem manifestItem = (ExportManifestItem) iter.next();
-			 * System.out.println("Id:"+manifestItem.getId());
-			 * System.out.println("Manifest Items:"+manifestItem.getManifestId().getId()); }
-			 * } }
-			 * 
-			 */
+			
+			  ExportManifest exportManifest
+			  =(ExportManifest)session.get(ExportManifest.class, 10042);
+			  if(exportManifest!=null) {
+				  List<ExportManifestItem> items=exportManifest.getManifestItems();
+			  
+			  if(items!=null) {
+			  
+			  for ( Iterator<ExportManifestItem> iter = items.iterator();iter.hasNext(); )
+			  { 
+				  ExportManifestItem manifestItem = (ExportManifestItem) iter.next();
+			  System.out.println("Id:"+manifestItem.getId());
+			  System.out.println("Manifest Items:"+manifestItem.getManifestId().getId()); }
+			  } 
+			  }
+			  
+			  //session.evict(exportManifest);
+			  System.out.println(session.contains(exportManifest));
+
+			  ExportManifest exportManifest1
+			  =(ExportManifest)session.get(ExportManifest.class, 10042);
+			  if(exportManifest1!=null) {
+				  List<ExportManifestItem> items=exportManifest1.getManifestItems();
+			  
+			  if(items!=null) {
+			  
+			  for ( Iterator<ExportManifestItem> iter = items.iterator();iter.hasNext(); )
+			  { 
+				  ExportManifestItem manifestItem = (ExportManifestItem) iter.next();
+			  System.out.println("Id1:"+manifestItem.getId());
+			  System.out.println("Manifest Items1:"+manifestItem.getManifestId().getId()); }
+			  } 
+			  }
+			  
+			 
 
 			/*
 			 * Iterator<Object> it = list.iterator(); while(it.hasNext()) { Object em =

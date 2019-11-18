@@ -13,7 +13,7 @@ import java.util.Set;
 public class ArrayListEx {
 	
 	//private static final Set s3;
-
+static String s="";
 	public static void main(String[] args) {
 		
 		
@@ -31,25 +31,49 @@ public class ArrayListEx {
 		 * 
 		 */
 		  
-		  for(int i =0; i<list.size(); i++) {
-			  for(int j=0; j<list.size()-1; j++) {
-				  
-				  if(list.get(j)>list.get(j+1)) {
-					  int temp = list.get(j);
-					  list.set(j, j+1);
-					  list.set(j+1, temp);
-				  }
-			  }
-		  }
+		/*
+		 * for(int i =0; i<list.size(); i++) { for(int j=0; j<list.size()-1; j++) {
+		 * 
+		 * if(list.get(j)>list.get(j+1)) { int temp = list.get(j); list.set(j, j+1);
+		 * list.set(j+1, temp); } } }
+		 */
 		  System.out.println(list);
 		 
 		
 		Date  d = new Date();
 		System.out.println(d);
 		
+		/*
+		 * try { String s = null; System.out.println("1"); try {
+		 * System.out.println(s.length()); }catch(NullPointerException e) {
+		 * System.out.println("f"); } System.out.println("hhe");
+		 * }catch(NullPointerException e) { System.out.println("s"); }
+		 */
+	/*	
+		int i=0, j=9;
+		do {
+			i++;
+			if(j--<i++) {
+				break;
+			}
+		}while(i<5) ;
+			System.out.println(i+""+j);
+		}*/
 		
-		
+	
+	  P: 
+		  for(int i=2; i<7;i++) 
+		  { 
+			  int j=i+1; 
+		  if(j==3) 
+			  continue; 
+		  if(i==5)
+			  break P;
+		  s=s+i;
+	  } System.out.println(s);
+	 
 	}
+	
 	
 	/*
 	 * static { Set s = new HashSet(); s3=Collections.unmodifiableSet(s);

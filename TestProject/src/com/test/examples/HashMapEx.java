@@ -17,7 +17,7 @@ public class HashMapEx {
 			 System.out.println(e.getId());
 			 
 			 System.out.println(e.getName());
-			 System.out.println(m.getValue());
+			 //System.out.println(m.getValue());
 		 }
 		
 		
@@ -58,12 +58,21 @@ class Employee{
 	}
 
 	
-	/*
-	 * @Override public boolean equals(Object obj) { if (this == obj) return true;
-	 * if (obj == null) return false; if (getClass() != obj.getClass()) return
-	 * false; Employee other = (Employee) obj; if (id != other.id) return false;
-	 * return true; }
-	 */
+	
+	  @Override 
+	  public boolean equals(Object obj) {
+		  if (this == obj) 
+			  return true;
+		  if (obj == null) 
+		  return false; 
+		  if (getClass() != obj.getClass()) 
+		  return false; 
+		  Employee other = (Employee) obj; 
+		  if (id != other.id) 
+			  return false;
+		  return true; 
+		  }
+	 
 	 
 	
 	

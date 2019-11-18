@@ -55,7 +55,7 @@ public class InnerClassEx implements Serializable{
 	public  class Inner{
 		
 		
-		 int a = 3;
+		 private int a = 3;
 	        static final int b = 4;
 	        
 	        public void run() {
